@@ -130,13 +130,13 @@
                 if (window.Telegram.WebApp) {
   if (window.Telegram.WebApp.isVerticalSwipesEnabled) {
     // Вертикальные свайпы для закрытия/минимизации включены
-    console.log('Вертикальные свайпы включены!');
+    Telegram.WebApp.showConfirm('Вертикальные свайпы включены!');
     // Добавьте свой код для обработки этого случая
     let tg = window.Telegram.WebApp;
     tg.isVerticalSwipesEnabled = (False);
   } else {
     // Вертикальные свайпы для закрытия/минимизации отключены
-    console.log('Вертикальные свайпы отключены!');
+    Telegram.WebApp.showConfirm('Вертикальные свайпы отключены!')
     // Добавьте свой код для обработки этого случая
   }
 }
