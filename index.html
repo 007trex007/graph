@@ -128,11 +128,11 @@
               }
               drawGraph()
                 if (window.Telegram.WebApp) {
-                                let window.Telegram.WebApp.isVerticalSwipesEnabled = False
   if (window.Telegram.WebApp.isVerticalSwipesEnabled) {
     // Вертикальные свайпы для закрытия/минимизации включены
     console.log('Вертикальные свайпы включены!');
     // Добавьте свой код для обработки этого случая
+    window.Telegram.WebApp.isVerticalSwipesEnabled = False
   } else {
     // Вертикальные свайпы для закрытия/минимизации отключены
     console.log('Вертикальные свайпы отключены!');
