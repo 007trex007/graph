@@ -74,7 +74,13 @@
                     
 
                     // Определяем цвет, который хотим применить
-                    const desiredColor = '#36A2EB';
+                      tg = window.Telegram.WebApp;
+                    if (tg.colorScheme === 'dark') {
+                        const desiredColor = '#ffffff';
+                    } else {
+                        const desiredColor = '#000000';
+                        
+                    
                     
                     // Получаем все элементы датасета
                     let allNodes = nodes.get({ fields: ['id'] });
@@ -87,6 +93,9 @@
                       // Обновляем цвет шрифта
                       nodes.update({ id: nodeId, font: { color: desiredColor } });
                     }
+
+                  
+    
                   
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });
