@@ -41,6 +41,11 @@
 <div class="card-body" id="mynetwork"></div>
 </div>
 <script type="text/javascript">
+         const myNetwork = document.getElementById('mynetwork');
+     const colorScheme = getComputedStyle(document.documentElement).getPropertyValue('--tg-color-scheme');
+     myNetwork.style.backgroundColor = colorScheme; 
+     
+
 
               // initialize global variables.
               var edges;
