@@ -37,14 +37,7 @@
              
         </style>
 </head>
-<script type="text/javascript">
-    tg = window.Telegram.WebApp;
-    const myNetwork = document.getElementById('mynetwork');
-    if (colorScheme === 'dark') {
-        myNetwork.style.backgroundColor = '#707070'; // Темный фон
-    } else {
-        myNetwork.style.backgroundColor = '#dbdbdb'; // Светлый фон
-    }</script><body>
+<body>
 <div class="card" style="width: 100%">
 <div class="card-body" id="mynetwork"></div>
 </div>
@@ -140,5 +133,12 @@
               }
               drawGraph();
         </script>
-</body>
+</body><script type="text/javascript">
+    tg = window.Telegram.WebApp;
+    const myNetwork = document.getElementById('mynetwork');
+    if (colorScheme === 'dark') {
+        myNetwork.style.backgroundColor = '#707070'; // Темный фон
+    } else {
+        myNetwork.style.backgroundColor = '#dbdbdb'; // Светлый фон
+    }</script>
 </html>
