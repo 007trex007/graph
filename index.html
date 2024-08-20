@@ -36,6 +36,20 @@
 
              
         </style>
+        <script>
+            tg = window.Telegram.WebApp;
+    // Переменная colorScheme может принимать значения 'dark' или 'light'
+
+    // Получаем элемент
+    const myNetwork = document.getElementById('mynetwork');
+
+    // Устанавливаем background-color в зависимости от colorScheme
+    if (tg.colorScheme === 'dark') {
+        myNetwork.style.backgroundColor = '#333'; // Темный фон
+    } else {
+        myNetwork.style.backgroundColor = '#e6e6e6'; // Светлый фон
+    }
+</script>
 </head>
 <body>
 <div class="card" style="width: 100%">
