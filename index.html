@@ -77,7 +77,7 @@
                     const desiredColor = '#36A2EB';
                     
                     // Получаем все элементы датасета
-                    const allNodes = nodes.get({ fields: ['id'] });
+                    let allNodes = nodes.get({ fields: ['id'] });
                   
                     // Цикл по элементам
                     for (let i = 0; i < allNodes.length; i++) {
