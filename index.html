@@ -92,12 +92,12 @@
                     }
                                         
                     // Получаем все элементы датасета
-                    const allNodes = nodes.get({ fields: ['id'] });
+                    let allNodes = nodes.get({ fields: ['id'] });
                     
                     // Обновляем цвет шрифта у каждого элемента
                     for (let i = 0; i < allNodes.length; i++) {
                       // Получаем id текущего элемента
-                      const nodeId = allNodes[i].id;
+                      let nodeId = allNodes[i].id;
                     
                       // Обновляем цвет шрифта
                       nodes.update({ id: nodeId, font: { color: desiredColor } });
