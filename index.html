@@ -1,10 +1,17 @@
 <html>
 <script src="https://telegram.org/js/telegram-web-app.js"></script><script type="text/javascript">
+    function toNumberString(num) { 
+  if (Number.isInteger(num)) { 
+    return num + ".0"
+  } else {
+    return num.toString(); 
+  }
+}
     tg = window.Telegram.WebApp;
     tg.expand();
     tg.disableVerticalSwipes();
     tg.setBackgroundColor(tg.ThemeParams.bg_color);
-    tg.showAlert(tg.viewportStableHeight);
+    tg.showAlert(toNumberString(tg.viewportStableHeight));
     </script><head>
 <meta charset="utf-8"/>
 <script src="lib/bindings/utils.js"></script>
